@@ -1,1 +1,1 @@
-npm install && serverless offline start
+npm install --dev && serverless offline start
