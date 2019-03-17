@@ -1,0 +1,20 @@
+# serverless.yml
+service: geo-blog-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  memorySize: 512
+
+functions:
+  nearbyPostsFunc:
+    handler: index.handler
+    events:
+      - http:
+          path: posts/proximity
+          method: post
+
+plugins:
+  - serverless-offline
