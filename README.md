@@ -3,8 +3,14 @@ Coding challenge using serverless architecture.
 
 ### Installation
 
+#### Option A
+
 ```
 git clone https://github.com/omarrida/geo-blog
+```
+
+```
+cd geo-blog
 ```
 
 ```
@@ -13,6 +19,20 @@ npm install
 
 ```
 serverless offline start
+```
+
+#### Option Col
+
+```
+git clone https://github.com/omarrida/geo-blog
+```
+
+```
+cd geo-blog
+```
+
+```
+bash col.sh
 ```
 
 ### Show Posts by Nearest User `POST`
